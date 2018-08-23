@@ -193,6 +193,7 @@ export default class SentinelConnector extends AbstractConnector {
     var client = new Redis({
       port: endpoint.port || 26379,
       host: endpoint.host,
+      password: endpoint.password,
       family: endpoint.family || (isIIpcConnectionOptions(this.options) ? undefined : this.options.family),
       retryStrategy: null,
       enableReadyCheck: false,
