@@ -14,7 +14,7 @@
     "generate-docs": "jsdoc2md lib/redis.js lib/cluster/index.js lib/commander.js > API.md",
     "prepublish": "npm run build && npm test",
     "bench": "matcha benchmarks/*.js",
-    "postinstall": "npm run build"
+    "postinstall": "npm install && npm run build"
   },
   "repository": {
     "type": "git",
